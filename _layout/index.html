@@ -2,9 +2,15 @@
 ---
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="utf-8">
-<title>{{ page.title }}</title>
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+</head>
 <body>
+    <div class="container">
+        <a href="{{ site.baseurl }}/">Archive index</a>
+        <a href="{{ site.baseurl }}/about">About</a>
+    </div>
     <div class="container">
         {{ content }}
     </div>
