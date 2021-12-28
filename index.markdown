@@ -1,4 +1,4 @@
 ---
-title: History of Northern Chinese Minorities
+title: Archive index
 layout: index
 ---
