@@ -2,21 +2,39 @@
 title: Contact
 permalink: /contact/
 ---
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+.search_form{
+  width:602px;
+  height:42px;
+  margin-top:20%;
+margin-left:30%;}
 
-<form class="form" action="https://formspree.io/{{site.email}}" method="POST">
+
+
+  
+</style>
+</head>
+
+<body>
+<form class="search_form" action="https://formspree.io/{{site.email}}" >
   <div class="form-item">
       <label class="contact-label" for="name">Name:</label>
       <input type="text" placeholder="Your name" id="name" class="contact-input" name="name" tabindex="1" required/>
   </div>
-  <div class="form-item">
+  <div >
       <label class="contact-label" for="email">Email:</label>
       <input type="email" placeholder="Your email" id="email" class="contact-input" name="_replyto" tabindex="2" required/>
   </div>
-  <div class="form-item">
+  <div>
     <label class="contact-label" for="message">Message:</label>
-    <textarea class="contact-textarea" placeholder="Your message" class="contact-input" rows="4" id="message" name="message" tabindex="3" required></textarea>
+    <textarea class="contact-textarea" placeholder="Your message" class="contact-input" rows="1" id="message" name="message" tabindex="3" required></textarea>
   </div>
-  <div class="form-item">
+  <div>
     <button type="submit" value="Send" class="form-btn">Send</button>
   </div>
 </form>
+</body>
+</html>
