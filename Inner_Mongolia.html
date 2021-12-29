@@ -1,25 +1,106 @@
 ---
 ---
 
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+/* Style the header */
+header {
+  background-color: rgb(67, 110, 165);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: rgb(123, 150, 199);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #5f85d6;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(110, 160, 226);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
-
 <body>
-  <h1> Inner Mongolia </h1>
-  <p>333333  </p>
-    
-    
+
+<h2>Inner Mongolia</h2>
+<p>In this page, it will show you the culture and history of various minorities living in the Inner Mongolia </p>
+<p>The most important ethetic is the mogolian, This page will display the origin of the Mongoian and their culture and history</p>
+
+<header>
+  <h2>Mogolian</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Homepage</a></li>
+      <li><a href="#">Search</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>ᠬᠥᠬᠡᠬᠣᠲᠠ，Hohhot</h1>
+    <p>It is the capital of Inner Mongolia of the People's Republic of China, located in the south-central part of Inner Mongolia. The city borders on the southwest of Ordos to the north, neighbors Baotou City, the northeast borders Ulanchabu City, and the southeast reaches Shanxi Xin City and Shuozhou City.</p>
+    <p>It is located on the southern edge of the Mongolian Plateau, at the southern foot of the Yinshan Mountains, Daqing Mountain in the north, Manhan Mountain in the southeast, and Tumochuan Plain in the southwest. The Yellow River flows through the southwest border, and the Dahei River flows from the northeast to the southwest through the urban area and into the Yellow River. The city has a total area of ​​17,186 square kilometers and a population of 3.126 million</p>
+  </article>
+</section>
+
+<footer>
+  <p>Copyright2022</p>
+</footer>
+
 </body>
-
-
-
-
-
-
-
-
 </html>
