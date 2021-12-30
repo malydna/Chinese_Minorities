@@ -1,4 +1,6 @@
 ---
-title: Urgur
+title: Uygur
 layout: 
+tags: 
+image-url:
 ---
