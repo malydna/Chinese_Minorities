@@ -1,50 +1,23 @@
 ---
-title: search
-permalink: /search/
+layout: index
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-    .search_form{
-        width:602px;
-        height:42px;
-        margin-top:20%;
-	    margin-left:30%;
-    }
-    .input_text{
-        width:400px;
-        height: 40px;
-        border:1px solid green;
-        padding:0px;
-        text-indent: 10px;
-        outline: none;
-        float:left;
-    }
- 
-    .input_sub{
-        width:100px;
-        height: 42px;
-        background: green;
-        border:0px;
-        float:left;
-        color:white;
-        cursor:pointer;
-    }
-    </style>
-</head>
-<body>
-    <form class="search_form"  method="get" action="https://en.wikipedia.org/wiki/Main_Page"  >
-    <input type="text" class="input_text" placeholder="search"><!-- -->
-    <input type="submit" value="Search" class="input_sub">
- 
-    </form>
-</body>
-</html>
-
- 
+<!-- Html Elements for Search -->
+<br>
+<p>Search title, tags, year, or licence</p>
+<div id="search-container">
+    <input type="text" id="search-input" placeholder="Search ...">
+    <ul id="results-container"></ul>
+</div>
+    
+<!-- Script pointing to search-script.js -->
+<script src="{{ site.baseurl }}/js/search-script.js" type="text/javascript"></script>
+    
+<!-- Configuration -->
+<script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/search.json'
+    })
+</script>

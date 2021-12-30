@@ -1,0 +1,15 @@
+---
+---
+[
+  {% for minority in site.minorities %}
+    {
+
+      "title"    : "{{ minority.title }}",
+      "url"      : "{{ site.baseurl }}{{ minority.url }}",
+      "tags"     : "{{ minority.tags }}",
+      "licence"  : "{{ minority.licence }}",
+      "year"     : "{{ minority.date | date: "%Y" }}"
+
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
