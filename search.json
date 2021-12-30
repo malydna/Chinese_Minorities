@@ -6,7 +6,7 @@
 
       "title"    : "{{ minority.title }}",
       "url"      : "{{ site.baseurl }}{{ minority.url }}",
-      "category" : "{{ minority.category }}",
+      "category" : "{{ minority.region }}",
       "tags"     : "{{ minority.tags }}",
 
     }
