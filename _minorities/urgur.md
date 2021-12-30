@@ -1,6 +1,6 @@
 ---
 title: Uygur
-layout: 
-tags: 
+layout: minority
+tags: Xinjiang, 
 image-url:
 ---

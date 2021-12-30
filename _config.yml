@@ -29,7 +29,8 @@ url: "http://northernchineseminorities.com" # the base hostname & protocol for y
 # Build settings
 plugins:
   - jekyll-feed
-
+collections: 
+  - minorities
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
