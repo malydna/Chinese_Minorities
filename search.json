@@ -1,15 +1,14 @@
 ---
+layout: none
 ---
 [
-  {% for minority in site.minorities %}
+  {% for minority in site.minorites %}
     {
-
-      "title"    : "{{ minority.title }}",
+      "title"    : "{{ minority.title | escape }}",
+      "category" : "{{ minority.category }}",
+      "tags"     : "{{ minority.tags | join: ', ' }}",
       "url"      : "{{ site.baseurl }}{{ minority.url }}",
-      "category" : "{{ minority.region }}",
-      "tags"     : "{{ minority.tags }}",
-
-    }
-  {% unless forloop.last %},{% endunless %}
+      "date"     : "{{ minority.date }}"
+    } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
