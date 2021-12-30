@@ -4,11 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
 <body>
-    <div id="wrapper">
-        <div id="header">
             <nav>
                 <a href="{{ site.baseurl }}/">Homepage</a>
                 <a href="{{ site.baseurl }}/about">About</a>
@@ -16,7 +13,6 @@
                 <a href="{{ site.baseurl }}/contact">Contact</a>
                 <a href="{{ site.baseurl }}/search">Search</a>
             </nav>
-        </div>
         <div id = "content">
             {% assign licence = site.data.licences | find: "licence", page.licence %}
             {% assign creator = site.data.creators | find: "name", page.creator %}
@@ -27,7 +23,6 @@
             <p>Tags: {{ page.tags }}</p>
         </div>
         <footer>
-            <p>Created with <a href = "https://jekyllrb.com/">Jekyll</a> for research purposes by <a href = "https://github.com/winskow">Wenluo Duan</a>, <a href = "https://github.com/malydna">Chungfai Lam</a>, <a href = "https://github.com/Deusvulth">Wentao Huang</a> in 2021</p>
+            <p>Created with <a href = "https://jekyllrb.com/">Jekyll</a> for research purposes by <a href = "https://github.com/winskow">Wenluo Duan</a>, <a href = "https://github.com/malydna">Chungfai Lam</a>, <a href = "https://github.com/Deusvulth">Wentao Huang</a> in 2022</p>
         </footer>
-    </div>
 </body>

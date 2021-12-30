@@ -1,6 +1,7 @@
 ---
 title: Uygur
 layout: minority
-tags: Xinjiang, 
+categories: Xinjiang
+tags:  
 image-url:
 ---
