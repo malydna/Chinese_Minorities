@@ -1,4 +1,4 @@
 ---
-title: Archive index
 layout: index
+title: Archive index
 ---
