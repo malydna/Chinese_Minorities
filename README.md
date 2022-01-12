@@ -4,4 +4,4 @@ This site is created for research purpose by Wenluo Duan, Chungfai Lam, and Went
 
 It is currently deployed at this address:
 
-https://fitzkhayyam.netlify.app/
+https://northern-chinese-minorities.netlify.app/
